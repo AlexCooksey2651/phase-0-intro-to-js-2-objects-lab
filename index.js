@@ -20,9 +20,11 @@ function deleteFromEmployeeByKey(employee, name) {
     return delEmployee;
 }
 
-
+// console.log(delEmployee)
 
 function destructivelyDeleteFromEmployeeByKey(employee, name) {
-    delete employee.name; 
+    delete employee[name]; 
     return employee;
 }
+
+console.log(employee)
